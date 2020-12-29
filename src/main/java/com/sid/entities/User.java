@@ -18,6 +18,21 @@ import org.hibernate.validator.constraints.Length;
 @Table(name = "users")
 public class User {
 
+
+	@Override
+	public String toString() {
+		return "{" +
+			" id='" + getId() + "'" +
+			", userName='" + getUserName() + "'" +
+			", email='" + getEmail() + "'" +
+			", password='" + getPassword() + "'" +
+			", name='" + getName() + "'" +
+			", lastName='" + getLastName() + "'" +
+			", roles='" + getRoles() + "'" +
+			"}";
+	}
+	
+
     public Set<Role> getRoles() {
 		return roles;
 	}
