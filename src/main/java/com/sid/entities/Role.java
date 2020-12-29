@@ -26,5 +26,20 @@ public class Role {
 	public void setRole(String role) {
 		this.role = role;
 	}
-    
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public Role(int id, String role) {
+		super();
+		this.id = id;
+		this.role = role;
+	}
+	public Role() {
+		super();
+	}
+   
+	
 }
