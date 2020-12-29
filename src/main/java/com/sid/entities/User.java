@@ -116,6 +116,11 @@ public class User {
 		this.lastName = lastName;
 		this.roles = roles;
 	}
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", userName=" + userName + ", email=" + email + ", password=" + password + ", name="
+				+ name + ", lastName=" + lastName + ", roles=" + roles + "]";
+	}
 	
 
 }
