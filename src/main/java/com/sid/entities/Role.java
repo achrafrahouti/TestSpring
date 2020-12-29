@@ -9,8 +9,6 @@ import javax.persistence.*;
 
 @Data
 @Builder
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
 @Table(name = "roles")
 public class Role {
@@ -41,5 +39,12 @@ public class Role {
 		super();
 	}
    
+
+	@Override
+	public String toString() {
+		return "{" +
+			" role='" + getRole() + "'" +
+			"}";
+	}
 	
 }
